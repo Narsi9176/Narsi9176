@@ -13,15 +13,20 @@ def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
         j = i - 1
+        
         while j >= 0 and key < arr[j]:
+        
             arr[j + 1] = arr[j]
+            
             j -= 1
+            
         arr[j + 1] = key
-
-_____________________________________
+        _____________________________________
 import re
 
-phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+phoneNumRegex = re.
+compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+
 
 mo = phoneNumRegex.search('My number is 415-555-4242.')
 
